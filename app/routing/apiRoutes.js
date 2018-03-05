@@ -14,10 +14,10 @@ module.exports = function (app) {
         //check each newFriend against the others
         for (var i = 0; i < newFriend.length-1; i ++) {
             compFriend = newFriend[i];
-            //check data in score array against others
+            //check data in obj.score array against others
             for (var j = 0; j < 10; j ++) {
                 friendScore = compFriend.score[j];
-                diff = parseInt(friendScore - compFriend);
+                let diff = parseInt(friendScore - compFriend);
             }
             //friendCheck = newFriend[i];
 
@@ -32,9 +32,10 @@ module.exports = function (app) {
     
 
     }
-console.log(compFriend);
-console.log(newFriend);
-console.log(diff);
+//console.log(compFriend);
+//console.log(newFriend);
+//console.log(diff);
+//console.log(friendData);
 
 
 //console.log(friend);

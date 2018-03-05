@@ -1,6 +1,8 @@
 var friend = require("../data/friends");
-
-
+var newFriend = [];
+var compFriend;
+var diff;
+var friendCheck;
 
 module.exports = function (app) {
     app.get("/api/friends", function(req, res) {
@@ -8,10 +10,31 @@ module.exports = function (app) {
     });
     
     app.post("/api/friends", function(req, res) {
-        var potentialFriend = [];
-    })
+        newFriend = req.body;
+        //check each newFriend against the others
+        for (var i = 0; i < newFriend.length-1; i ++) {
+            compFriend = newFriend[i];
+            //check data in score array against others
+            for (var j = 0; j < 10; j ++) {
+                friendScore = compFriend.score[j];
+                diff = parseInt(friendScore - compFriend);
+            }
+            //friendCheck = newFriend[i];
 
-  
-}
-console.log(friend);
+        }
+    });
 
+
+
+    app.post("/api/clear", function() {
+     
+        });
+    
+
+    }
+console.log(compFriend);
+console.log(newFriend);
+console.log(diff);
+
+
+//console.log(friend);

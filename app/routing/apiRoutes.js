@@ -11,17 +11,31 @@ module.exports = function (app) {
     
     app.post("/api/friends", function(req, res) {
         newFriend = req.body;
+        console.log(newFriend);
+        console.log(friend);
+        //create empty obj with name and photo keys
+        //
+        let diff = 0;
+
         //check each newFriend against the others
-        for (var i = 0; i < newFriend.length-1; i ++) {
-            compFriend = newFriend[i];
+        for (var i = 0; i < friend.length; i ++) {
+            compFriend = friend[i];
             //check data in obj.score array against others
-            for (var j = 0; j < 10; j ++) {
-                friendScore = compFriend.score[j];
-                let diff = parseInt(friendScore - compFriend);
+            for (var j = 0; j < compFriend.scores.length; j ++) {
+                friendScore = compFriend.scores[j];
+                diff += parseInt(friendScore - newFriend.scores[j]);
+                //console.log(diff);
+        
             }
+            console.log(diff);
+
             //friendCheck = newFriend[i];
 
         }
+        var obj = {
+            name: "Pete"
+        }
+        res.json(obj);
     });
 
 

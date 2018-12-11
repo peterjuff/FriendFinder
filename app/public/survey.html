@@ -1,175 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u'
+        crossorigin='anonymous'>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <title>Document</title>
 </head>
+
 <body>
     <div class="container">
-            <div class="jumbotron">
-                    <h1>Friend Finder</h1>
-                    <p>Below you'll find a few questions in order to get to know you better.</p>
-                    <p>Please answer them on a scale of 1 to 5.</p>
-                    <h4>Name (required)</h4>
-                    <input type="text" id="name" class="form-control" required>
-                    <h4>Link to Photo Image (required)</h4>
-                    <input type="text" id="photo" class="form-control" required>
+        <div class="jumbotron">
+            <h1>Friend Finder</h1>
+            <p>Below you'll find a few questions in order to get to know you better.</p>
+            <p>Please answer them on a scale of 1 to 5.</p>
+            <h4>Name (required)</h4>
+            <input type="text" id="name" class="form-control" required>
+            <h4>Link to Photo Image (required)</h4>
+            <input type="text" id="photo" class="form-control" required>
 
-                    <br>
-                    <br>
-                    
-                        <h4>Question 1</h4>
-                      <h2>Are you extraverted?</h2>
-                      <div class="form-group">
-                          <label>Select An Option</label>
-                          <select class="form-control" id="q1">
-                              <option value="1">1 (completely!)</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4</option>
-                              <option value="5">5 (I'd like to be always be alone)</option>
-                          </select>
-                      </div>
+            <br>
+            <br>
 
-                      <h4>Question 2</h4>
-                      <h2>Do you like pets?</h2>
-                      <div class="form-group">
-                          <label>Select An Option</label>
-                          <select class="form-control" id="q2">
-                              <option value="1">1 (Love!)</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4</option>
-                              <option value="5">5 (Hate!)</option>
-                          </select>
-                      </div>
+            <h4>Question 1</h4>
+            <h2>Are you extraverted?</h2>
+            <div class="form-group">
+                <label>Select An Option</label>
+                <select class="form-control" id="q1">
+                    <option value="1">1 (completely!)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (I'd like to be always be alone)</option>
+                </select>
+            </div>
 
-                      <h4>Question 3</h4>
-                      <h2>Are you a morning person?</h2>
-                      <div class="form-group">
-                          <label>Select An Option</label>
-                          <select class="form-control" id="q3">
-                              <option value="1">1 (Best part of the day!)</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4</option>
-                              <option value="5">5 (Morning shouldn't exist.)</option>
-                          </select>
-                      </div>
+            <h4>Question 2</h4>
+            <h2>Do you like pets?</h2>
+            <div class="form-group">
+                <label>Select An Option</label>
+                <select class="form-control" id="q2">
+                    <option value="1">1 (Love!)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Hate!)</option>
+                </select>
+            </div>
 
-                      <h4>Question 4</h4>
-                      <h2>Do you like to exercise?</h2>
-                      <div class="form-group">
-                          <label>Select An Option</label>
-                          <select class="form-control" id="q4">
-                              <option value="1">1 (Love!)</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4</option>
-                              <option value="5">5 (Hate!)</option>
-                          </select>
-                      </div>
+            <h4>Question 3</h4>
+            <h2>Are you a morning person?</h2>
+            <div class="form-group">
+                <label>Select An Option</label>
+                <select class="form-control" id="q3">
+                    <option value="1">1 (Best part of the day!)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Morning shouldn't exist.)</option>
+                </select>
+            </div>
 
-                      <h4>Question 5</h4>
-                      <h2>Do you like going to concerts?</h2>
-                      <div class="form-group">
-                          <label>Select An Option</label>
-                          <select class="form-control" id="q5">
-                              <option value="1">1 (Love!)</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4</option>
-                              <option value="5">5 (Hate!)</option>
-                          </select>
-                      </div>
+            <h4>Question 4</h4>
+            <h2>Do you like to exercise?</h2>
+            <div class="form-group">
+                <label>Select An Option</label>
+                <select class="form-control" id="q4">
+                    <option value="1">1 (Love!)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Hate!)</option>
+                </select>
+            </div>
 
-                      <h4>Question 6</h4>
-                      <h2>Are you spontaneous?</h2>
-                      <div class="form-group">
-                          <label>Select An Option</label>
-                          <select class="form-control" id="q6">
-                              <option value="1">1 (I never make plans!)</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4</option>
-                              <option value="5">5 (I always make plans!)</option>
-                          </select>
-                      </div>
+            <h4>Question 5</h4>
+            <h2>Do you like going to concerts?</h2>
+            <div class="form-group">
+                <label>Select An Option</label>
+                <select class="form-control" id="q5">
+                    <option value="1">1 (Love!)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Hate!)</option>
+                </select>
+            </div>
 
-                      <h4>Question 7</h4>
-                      <h2>Do you like to watch television?</h2>
-                      <div class="form-group">
-                          <label>Select An Option</label>
-                          <select class="form-control" id="q7">
-                              <option value="1">1 (Love!)</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4</option>
-                              <option value="5">5 (Hate!)</option>
-                          </select>
-                      </div>
+            <h4>Question 6</h4>
+            <h2>Are you spontaneous?</h2>
+            <div class="form-group">
+                <label>Select An Option</label>
+                <select class="form-control" id="q6">
+                    <option value="1">1 (I never make plans!)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (I always make plans!)</option>
+                </select>
+            </div>
 
-                      <h4>Question 8</h4>
-                      <h2>Do you like going to museums?</h2>
-                      <div class="form-group">
-                          <label>Select An Option</label>
-                          <select class="form-control" id="q8">
-                              <option value="1">1 (Love!)</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4</option>
-                              <option value="5">5 (Hate!)</option>
-                          </select>
-                      </div>
+            <h4>Question 7</h4>
+            <h2>Do you like to watch television?</h2>
+            <div class="form-group">
+                <label>Select An Option</label>
+                <select class="form-control" id="q7">
+                    <option value="1">1 (Love!)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Hate!)</option>
+                </select>
+            </div>
 
-                      <h4>Question 9</h4>
-                      <h2>Do you like to learn?</h2>
-                      <div class="form-group">
-                          <label>Select An Option</label>
-                          <select class="form-control" id="q9">
-                              <option value="1">1 (Love!)</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4</option>
-                              <option value="5">5 (Hate!)</option>
-                          </select>
-                      </div>
+            <h4>Question 8</h4>
+            <h2>Do you like going to museums?</h2>
+            <div class="form-group">
+                <label>Select An Option</label>
+                <select class="form-control" id="q8">
+                    <option value="1">1 (Love!)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Hate!)</option>
+                </select>
+            </div>
 
-                      <h4>Question 10</h4>
-                      <h2>Do you like to travel?</h2>
-                      <div class="form-group">
-                          <label>Select An Option</label>
-                          <select class="form-control" id="q10">
-                              <option value="1">1 (Love!)</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4</option>
-                              <option value="5">5 (Hate!)</option>
-                          </select>
-                      </div>
+            <h4>Question 9</h4>
+            <h2>Do you like to learn?</h2>
+            <div class="form-group">
+                <label>Select An Option</label>
+                <select class="form-control" id="q9">
+                    <option value="1">1 (Love!)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Hate!)</option>
+                </select>
+            </div>
 
-                      <input id = "submit" class="btn btn-success" type="submit" value="Submit">
-                          
-       
-                          
+            <h4>Question 10</h4>
+            <h2>Do you like to travel?</h2>
+            <div class="form-group">
+                <label>Select An Option</label>
+                <select class="form-control" id="q10">
+                    <option value="1">1 (Love!)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Hate!)</option>
+                </select>
+            </div>
 
-                  </div>
+            <input id="submit" class="btn btn-success" type="submit" value="Submit">
+            <div class="modal-body">
+                <h2 id="match-name"></h2>
+
+            </div>
+
+
+
+        </div>
 
     </div>
     <script type="text/javascript">
-
-        $("#submit").on("click", function(event) {
+        $("#submit").on("click", function (event) {
             event.preventDefault();
             var friendData = {
                 name: $("#name").val().trim(),
                 photo: $("#photo").val().trim(),
                 scores: [
-                $("#q1").val(),
+                    $("#q1").val(),
                     $("#q2").val(),
                     $("#q3").val(),
                     $("#q4").val(),
@@ -181,26 +186,19 @@
                     $("#q10").val()
                 ]
             };
-                
-            
-             console.log(friendData);
 
-             $.post("/api/friends", friendData, function(data) {
+
+            console.log(friendData);
+
+            $.post("/api/friends", friendData, function (data) {
                 console.log(data);
-             });
+                $("#match-name").text(data.name);
+                $("#match-img").attr("src", data.photo);
+                $("#results-modal").modal("toggle");
+            });
 
         });
-
-        // generate onclick event on submit button
-
-        //grab user input and send it to server [use post route] in api.route.js
-        //use ajax call for this
-        //url/api/friends (post)
-
-
-        //modals go here if data worked
-    
-    
     </script>
 </body>
+
 </html>
